@@ -1,0 +1,20 @@
+{
+  "docs": {
+    "title": "文档",
+    "type": "page"
+  },
+  "cv": {
+    "title": "一纸简历",
+    "href": "/",
+    "type": "page",
+    "newWindow": true
+  },
+  "resumes": {
+    "title": "我的简历",
+    "href": "/resumes",
+    "type": "page",
+    "newWindow": true
+  },
+  "index": "文档",
+  "usage": "使用"
+}
