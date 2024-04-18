@@ -1,17 +1,76 @@
-# 一纸简历中的 Markdown
+---
+title: 使用指南
+---
 
-一纸简历根据 Markdown 生成 PDF 格式简历。它的语法与 Markdown 一致，但对部分语法不受支持，一纸简历的主要组成部分为两大块:
+一纸简历根据 markdown 生成 PDF 格式简历，它的语法与 markdown 一致，如果你非常熟悉 markdown，则直接将简历编辑为一份 markdown 即可。
 
-## 正文信息
+但因为简历的特殊性，因此只支持一些 markdown 的基础语法，同时为了扩展样式的可能性，使其支持 `tailwindcss` 样式。
+
+## 基础语法
 
 目前支持以下 Markdown 语法:
 
-+ heading: `#`、`##`、`###`、`####`、`#####`、`######`
-+ inlineCode: `\`hello\``
-+ a: `[shanyue](https://shanyue.tech)`
-+ list: `+`、`-`、`1. `
++ Heading: `#`、`##`、`###`、`####`。将简历名称视为 `h1`，如 `# 山月-五年-前端`，专业技能工作经验等视为 `h2`，如 `## 专业技能`。
++ Code: \`javascript\`。填写简历中的技术栈，可用该语法。
++ list: `+`、`-`、`1. `。罗列项目经验责任、重难点时可以用列表罗列。
++ a: `[shanyue](https://shanyue.tech)`。GitHub、博客、个人项目地址可以使用 `a` 标签。
 
-目前不支持以下 Markdown 语法:
+## tailwindcss 样式
 
-1. 引用: `blockquote`
-1. Markdown 扩展语法
+为了扩展简历样式，一纸简历支持 [tailwindcss](https://tailwindcss.com) 样式，如 `text-red-500`、`bg-blue-500` 等。
+
+用它实现两栏或者三栏布局很方便。
+
+``` html
+<!-- 两栏布局 -->
+<h3>
+  <div className="flex justify-between">
+    <div>山西大学</div>
+    <div>2009-2013</div>
+  </div>
+</h3>
+
+<!-- 三拦布局 -->
+<h3>
+  <div className="flex justify-between">
+    <div>山西大学</div>
+    <div>本科</div>
+    <div>2009-2013</div>
+  </div>
+</h3>
+```
+
+![](https://static.shanyue.tech/images/24-04-18/clipboard-2791.7a3727.webp)
+
+## icon 图标
+
+为了扩展简历中图标的样式，一纸简历支持 [Lucide Icons](https://lucide.dev/icons/)。你可以很容易在一纸简历中书写各种图标，如手机、邮箱、GitHub 等。
+
+你只需要找到该 Icon 的名称，然后通过 `icon-xxx` 的 class 进行引用即可。
+
+![](https://static.shanyue.tech/images/24-04-18/clipboard-7222.e4a30c.webp)
+
+示例如下：
+
+``` html
+# 山月-三年-前端工程师
+
+<span class="icon-message-circle"></span> 微信：shanyue-bot |
+<span class="icon-phone"></span> 18334567890 |
+<span class="icon-mail"></span> me@shanyue.tech |
+<span class="icon-github"></span> [shfshanyue](https://github.com/shfshanyue) |
+<span class="icon-home"></span> <https://shanyue.tech>
+```
+
+## 速查表
+
+| 元素         | 语法                                                                                 | 
+|-----------------|-------------------------------------------------------------------------------------------------|
+| Heading         | <code># H1<br/>## H2<br/>### H3</code>                                                          |
+| Bold            | <code>\*\*bold text\*\*</code>                                                                            |
+| Italic          | <code>\*italicized text\*</code>                                                                        |
+| Blockquote      | <code>\> blockquote</code>                                                                           |
+| Ordered List    | <code>1. First item<br/>2. Second item<br/>3. Third item</code>                                       |
+| Unordered List  | <code>+ First item<br/>+ Second item<br/>+ Third item</code>                                          |
+| Code            | <code>\`code\`</code>                                                                                   |
+| Link            | <code>\[title\]\(https://www.example.com\)</code>                                                         |
