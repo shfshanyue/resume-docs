@@ -16,5 +16,6 @@
     "newWindow": true
   },
   "index": "文档",
-  "usage": "使用"
+  "usage": "使用语法",
+  "autofit": "自动一页及自动两页"
 }

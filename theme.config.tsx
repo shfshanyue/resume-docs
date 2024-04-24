@@ -30,7 +30,7 @@ const config: DocsThemeConfig = {
           name="og:title"
           content={title ? title + ' – 一纸简历' : '一纸简历'}
         />
-        <meta name="apple-mobile-web-app-title" content="大厂面试每日一题" />
+        <meta name="apple-mobile-web-app-title" content="一纸简历" />
       </>
     )
   },
