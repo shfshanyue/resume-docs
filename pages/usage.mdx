@@ -1,29 +1,31 @@
 ---
-title: 使用指南
+title: 一纸简历使用指南：轻松创建专业 Markdown 简历
+description: 学习如何使用一纸简历工具，通过 Markdown 语法创建精美的 PDF 简历。掌握基础语法、Tailwind CSS 样式和 Lucide 图标的使用技巧。
+date: 2024-04-29
 ---
 
-# 使用指南
+# 一纸简历使用指南
 
-![](https://static.shanyue.tech/images/24-04-29/clipboard-7212.f25615.webp)
+![一纸简历示例](https://static.shanyue.tech/images/24-04-29/clipboard-7212.f25615.webp)
 
-一纸简历根据 markdown 生成 PDF 格式简历，它的语法与 markdown 一致，如果你非常熟悉 markdown，则直接将简历编辑为一份 markdown 即可。
+一纸简历是一款强大的工具，能够将 Markdown 格式的内容转换为精美的 PDF 简历。如果你已经熟悉 Markdown，你可以直接开始编辑你的简历。即使你是 Markdown 新手，这个指南也会帮助你快速上手。
 
-但因为简历的特殊性，因此只支持一些 markdown 的基础语法，同时为了扩展样式的可能性，使其支持 `tailwindcss` 样式，以及 `lucide` 的 icon。
+为了适应简历的特殊需求，一纸简历支持 Markdown 的核心语法，并引入了 Tailwind CSS 样式和 Lucide 图标，以提供更丰富的样式选择。
 
 ## 基础语法
 
-目前支持以下 Markdown 语法:
+一纸简历支持以下 Markdown 语法：
 
-+ Heading: `#`、`##`、`###`、`####`。将简历名称视为 `h1`，如 `# 山月-五年-前端`，专业技能工作经验等视为 `h2`，如 `## 专业技能`。
-+ Code: \`javascript\`。填写简历中的技术栈，可用该语法。
-+ list: `+`、`-`、`1. `。罗列项目经验责任、重难点时可以用列表罗列。
-+ a: `[shanyue](https://shanyue.tech)`。GitHub、博客、个人项目地址可以使用 `a` 标签。
++ 标题：使用 `#`、`##`、`###`、`####`。例如，将简历名称设为 `h1`（如 `# 张三-五年经验-前端工程师`），将主要部分如专业技能、工作经验等设为 `h2`（如 `## 专业技能`）。
++ 代码：使用 \`javascript\` 格式来突出显示技术栈。
++ 列表：使用 `+`、`-` 或 `1. ` 来列举项目经验、职责或技能点。
++ 链接：使用 `[文本](链接)` 格式添加 GitHub、博客或个人项目链接。
 
-## classname 自动补全
+## 样式增强
 
-一纸简历接入了 [emmet](https://www.emmet.io/)，因此你可以快速书写样式，如 `text-red-500`、`bg-blue-500` 等。
+### Tailwind CSS 支持
 
-当你输入 classname 后，紧跟 `command-e` 即可自动补全。
+为了让你的简历更具个性化，一纸简历集成了 [Tailwind CSS](https://tailwindcss.com)。你可以使用如 `text-red-500`、`bg-blue-500` 等类名来自定义样式。
 
 ``` html
 .text-center.text-lg<cmd-e>
@@ -80,13 +82,11 @@ title: 使用指南
 
 ![](https://static.shanyue.tech/images/24-04-18/clipboard-2791.7a3727.webp)
 
-## icon 图标
+## Lucide 图标集成
 
-为了扩展简历中图标的样式，一纸简历支持 [Lucide Icons](https://lucide.dev/icons/)。你可以很容易在一纸简历中书写各种图标，如手机、邮箱、GitHub 等。
+一纸简历支持 [Lucide Icons](https://lucide.dev/icons/)，让你能够轻松添加各种图标，如手机、邮箱、GitHub 等。只需找到图标名称，然后使用 `icon-xxx` 类名引用即可。
 
-你只需要找到该 Icon 的名称，然后通过 `icon-xxx` 的 class 进行引用即可。
-
-![](https://static.shanyue.tech/images/24-04-18/clipboard-7222.e4a30c.webp)
+![Lucide 图标示例](https://static.shanyue.tech/images/24-04-18/clipboard-7222.e4a30c.webp)
 
 示例如下：
 
