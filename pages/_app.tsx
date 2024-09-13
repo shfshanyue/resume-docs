@@ -8,7 +8,7 @@ import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    if (process.env.gaId) {
+    if (process.env.NEXT_PUBLIC_GA_ID) {
       initGA()
       logPageView()
       Router.events.on('routeChangeComplete', logPageView)
