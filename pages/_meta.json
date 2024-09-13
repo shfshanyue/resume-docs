@@ -22,6 +22,8 @@
   },
   "usage": "使用语法",
   "ai-generate": "智能生成",
+  "optimize": "一键优化",
+  "case-error": "术语检查",
   "autofit": "自动一页",
   "evaluate": "简历评估",
   "-- Resume": {
