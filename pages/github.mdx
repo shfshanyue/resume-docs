@@ -1,0 +1,113 @@
+# GitHub 求职准备完全指南
+
+![GitHub Profile 示例](https://static.shanyue.tech/images/24-04-29/github-profile.webp)
+
+GitHub 作为开发者的第二张名片，在技术面试中占据着越来越重要的地位。本指南将帮助你打造一个专业的 GitHub 档案，提升在技术面试中的竞争力。
+
+## 核心准备要点
+
+### 1. 精选优质项目
+
+优质的项目展示比数量更重要。确保你的置顶项目：
+
++ 良好的代码风格。面试官很难一眼看到代码质量，但代码风格是很容易看出来的。
++ 完整的文档说明和 README。演示该项目的功能以及开发流程，可以参考任意 npm 包的 README，比如 [axios](https://github.com/axios/axios)。
++ 合理的 Commit Message。有许多同学都是只有一次 Commit，这种 GitHub 项目参考价值不大，容易给面试官留下负面分。
++ 合理的代码注释及单元测试。
++ 展现你最擅长的技术栈
+
+### 2. README 标准化
+
+一个专业的项目 README 至少应包含：
+
+``` markdown
+# 项目名称
+
+项目简介（一句话说明这个项目的用途）
+
+## 功能特性
+
++ 核心功能 1
++ 核心功能 2
++ ...
+
+## 技术栈
+
+`react` `typescript` `next.js` `tailwindcss`
+
+## 本地开发
+
+```bash
+# 安装依赖
+pnpm install
+
+# 启动开发服务器
+pnpm dev
+```
+
+## 项目截图
+
+[在此展示核心功能的截图或 GIF 演示]
+
+```
+
+### 3. 提交记录规范
+
+提交信息建议采用 [Conventional Commits](https://www.conventionalcommits.org/) 规范：
+
+``` bash
+feat: 添加用户登录功能
+fix: 修复移动端样式问题
+docs: 更新 API 文档
+style: 代码格式化
+refactor: 重构数据处理逻辑
+```
+
+### 4. 项目展示技巧
+
+<Callout emoji="👾">
+  置顶 2-3 个最能体现你技术能力的项目，而不是数量最多的项目。
+</Callout>
+
+优秀的项目展示应该：
+
++ 使用 Profile README 展示你的技术栈和项目亮点
++ 使用 [Shields.io](https://shields.io/) 或 [Badgen](https://badgen.net/) 添加技术栈徽章。
++ 添加在线 Demo 链接
++ 配置合适的 Topics 标签以提高可发现性
+
+## GitHub Profile
+
+GitHub Profile 是展示个人技术实力的重要窗口。通过创建与你的用户名同名的仓库，你可以自定义个人主页的展示内容。
+
+### 创建步骤
+
+1. 创建一个与你的 GitHub 用户名同名的新仓库。如 `shfshanyue/shfshanyue`
+2. 在仓库中添加 README.md 文件
+3. GitHub 会自动将该 README 显示在你的个人主页
+
+### GitHub Profile README 示例
+
+```markdown
+# 你的名字
+
+👨‍💻 全栈工程师 | 🌱 持续学习者
+
+## 关于我
+
+- 🔭 目前在 XX 公司从事 XX 开发
+- 🌱 正在学习 Rust 和 WebAssembly
+- 👯 希望在开源项目中协作
+- 💬 可以问我关于 React, Node.js, TypeScript 的问题
+
+## 技术栈
+
+### 前端
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white)
+
+### 后端
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+```
