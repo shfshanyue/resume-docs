@@ -29,5 +29,6 @@ export default {
   resume: '编写简历',
   project: '项目经验',
   'project-highlight': '项目亮点',
+  blog: '技术博客',
   github: 'GitHub'
 }
